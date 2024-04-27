@@ -69,5 +69,81 @@ body {
     margin-left: 50px; 
     text-decoration: underline; 
   }
+  #estudios .text h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-top: 1rem;
+    margin-left: 350px;
+    text-decoration: underline;
+  }
   
+  #estudios .text .timeline-text {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start; 
+    height: 100%;
+    margin-left: 300px;
+    font-size: 26px;
+  }
+  
+  #estudios .text .timeline-text p {
+    line-height: 3;
+  }
+  
+  #estudios .content-wrapper .mapa iframe {
+    width: 50%; 
+    margin-left: auto;  
+    margin-left: 200px; 
+    display: block; 
+  }
+  
+  #estudios .content-wrapper .mapa p {
+    font-size: 30px; 
+    margin-right: 200px;
+    margin-left: 150px;
+  }
+  
+  
+  .content-wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 100%;
+  }
+  
+  .text {
+    width: 50%;
+  }
+  .mapa {
+    width: 50%;
+  }
+  
+  #quien-soy .text p, #experiencia .text p {
+    font-size: 2rem;
+    margin-left: 5%;
+  }
+  
+  #quien-soy .image {
+    width: 50%; 
+    display: flex;
+    justify-content: center;
+  }
+  
+  #quien-soy .image img {
+    max-width: 40%;
+    height: auto;
+    border: 1px solid black;
+  }
+  #estudios .content-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  #estudios .content-wrapper .text {
+    width: 50%;
+  }
+  #estudios .content-wrapper .mapa {
+    width: 50%;
+  }
  
