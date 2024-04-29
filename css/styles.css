@@ -51,6 +51,10 @@ body {
   .text {
     width: 50%; 
   }
+  p {
+    text-align: justify;
+    padding-left: 2%;
+  }
   
   #quien-soy .title, #estudios .title, #experiencia .title {
     background-color: gray;
@@ -82,7 +86,7 @@ body {
     justify-content: flex-start;
     align-items: flex-start; 
     height: 100%;
-    margin-left: 300px;
+    margin-left: 35%;
     font-size: 26px;
   }
   
@@ -146,4 +150,96 @@ body {
   #estudios .content-wrapper .mapa {
     width: 50%;
   }
- 
+  #experiencia .text h1 {
+    font-size: 2rem;
+    margin-top: 1rem;
+    margin-left: 100px;
+    text-decoration: underline;
+  }
+  
+  #experiencia .text {
+    width: 100%; /* Ancho del div de texto */
+    margin-right: 100px;
+  }
+  
+  h1 {
+    font-size: 28px;
+  }
+  
+  #mas-contenido .title {
+    background-color: gray;
+    color: white;
+    text-align: center;
+    padding: 1px;
+    font-size: 10px;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  
+  #mas-contenido .content-wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 100%;
+  }
+  
+  #mas-contenido .video {
+    width: 100%;
+    display: flex;
+    justify-content: center; /* Para centrar el video */
+  }
+  
+  #mas-contenido .video iframe {
+    border: 1px solid black; /* Para añadir el borde al video */
+  }
+  
+  #mas-contenido .download {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+  }
+  
+  #mas-contenido .download a {
+    text-decoration: none;
+    color: white; /* Para hacer el texto del botón negro */
+    background-color: gray; /* Para hacer el fondo del botón gris */
+    border: 1px solid gray;
+    padding: 10px;
+    border-radius: 5px;
+    font-weight: bold; /* Para hacer el texto del botón en negrita */
+  }
+  
+  footer {
+    background-color: #f8f8f8;
+    padding: 1px;
+    text-align: center;
+  }
+  
+  footer .contact-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  footer .text {
+    flex: 1;
+    text-align: center;
+  }
+
+  footer .text p {
+    font-size: 20px;
+    margin: 0 10px;
+  }
+  
+  footer .flag-button {
+    margin-right: 50px;
+    padding: 5px; /* Añade un espacio interno alrededor de la bandera */
+  }
+  
+  footer .flag-image {
+    width: 70px; /* Ajusta el tamaño de la bandera */
+  }
