@@ -8,7 +8,7 @@ body {
   nav {
     background-color: black;
     color: white;
-    height: 50px;
+    height: 60%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -96,15 +96,14 @@ body {
   
   #estudios .content-wrapper .mapa iframe {
     width: 50%; 
-    margin-left: auto;  
-    margin-left: 200px; 
+    margin-left: 40%; 
     display: block; 
   }
   
   #estudios .content-wrapper .mapa p {
     font-size: 30px; 
-    margin-right: 200px;
-    margin-left: 150px;
+    margin-right: 10%;
+    margin-left: 38%;
   }
   
   
@@ -129,9 +128,12 @@ body {
   }
   
   #quien-soy .image {
-    width: 50%; 
-    display: flex;
-    justify-content: center;
+    width: 38%;
+    height: 1%; 
+    display: block;
+    margin-right: 6%;
+    margin-top: 2%;
+    margin-bottom: 3%;
   }
   
   #quien-soy .image img {
@@ -243,3 +245,78 @@ body {
   footer .flag-image {
     width: 70px; /* Ajusta el tamaño de la bandera */
   }
+  @media only screen and (max-width: 768px) {
+    nav {
+      height: auto; /* Ajustar altura automáticamente */
+      flex-direction: column; /* Cambiar dirección del flexbox */
+      align-items: center; /* Centrar elementos */
+    }
+  
+    nav ul .right-icons {
+      margin-left: 0; /* Eliminar margen izquierdo */
+      margin-top: 5%; /* Espacio superior */
+    }
+  
+    nav ul .right-icons li {
+      margin-left: 0; /* Eliminar margen izquierdo */
+      margin-top: 5%; /* Espacio superior entre íconos */
+    }
+  
+    #quien-soy .image {
+      width: 40%; 
+      height: 20%;
+      margin-left: 6%;
+      margin-top: 20%; 
+    }
+  
+    #estudios .text h2 {
+      margin-left: 0; /* Ajustar margen izquierdo a 0 */
+      text-align: center; /* Centrar el título */
+    }
+  
+    #estudios .text .timeline-text {
+      margin-left: 0; /* Ajustar margen izquierdo a 0 */
+      justify-content: center; /* Centrar el contenido */
+      font-size: 18px; /* Reducir tamaño de fuente */
+    }
+  
+    #estudios .content-wrapper .mapa iframe {
+      width: 80%; /* Reducir tamaño del mapa */
+      margin: 0 auto; /* Centrar horizontalmente */
+    }
+  
+    #estudios .content-wrapper .mapa p {
+      font-size: 24px; /* Ajustar tamaño de fuente */
+      margin: 0 auto; /* Centrar horizontalmente */
+    }
+  
+    #experiencia .text h1 {
+      margin-left: 0; /* Ajustar margen izquierdo a 0 */
+      text-align: center; /* Centrar el título */
+    }
+  
+    #experiencia .text {
+      width: 100%; /* Ancho del div de texto */
+      margin-right: 0; /* Ajustar margen derecho a 0 */
+    }
+  
+    .text {
+      width: 100%; /* Ancho completo */
+    }
+  
+    .download {
+      width: auto; /* Ancho completo */
+      margin-top: 20px; /* Espacio superior */
+      text-align: center;
+    }
+  
+    .download a {
+      padding: 15px; /* Ajustar relleno */
+      display: inline-block; /* Convertir en bloque en línea */
+      background-color: gray; /* Color de fondo */
+      color: white; /* Color de texto */
+      text-decoration: none; /* Quitar subrayado */
+      border-radius: 5px; /* Borde redondeado */
+    }
+  }
+  
