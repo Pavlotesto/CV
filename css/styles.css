@@ -50,10 +50,18 @@ body {
   
   .text {
     width: 50%; 
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
   }
   p {
     text-align: justify;
     padding-left: 2%;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: auto;
+    font-style: normal;
   }
   
   #quien-soy .title, #estudios .title, #experiencia .title {
@@ -64,14 +72,39 @@ body {
     font-size: 10px;
     font-weight: bold;
     text-transform: uppercase;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
   }
   
   #quien-soy .text h2 {
     font-size: 2rem; 
     font-weight: bold;
     margin-top: 1rem;
-    margin-left: 50px; 
+    margin-left: 10%; 
     text-decoration: underline; 
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    
+  }
+  .qs {
+    font-size: 2rem; 
+    font-weight: bold;
+    margin-top: 1rem;
+    margin-left: 10%; 
+    text-decoration: underline; 
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+  }
+  .xp {
+    font-size: 2rem; 
+    margin-top: 1rem;
+    margin-left: 10%; 
+    margin-right:7%;
   }
   #estudios .text h2 {
     font-size: 2rem;
@@ -79,6 +112,10 @@ body {
     margin-top: 1rem;
     margin-left: 350px;
     text-decoration: underline;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
   }
   
   #estudios .text .timeline-text {
@@ -88,6 +125,21 @@ body {
     height: 100%;
     margin-left: 35%;
     font-size: 26px;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+  }
+  #estudios .text .title-text {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start; 
+    margin-left: 37%;
+    font-size: 140%;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
   }
   
   #estudios .text .timeline-text p {
@@ -97,7 +149,7 @@ body {
   #estudios .content-wrapper .mapa iframe {
     width: 50%; 
     margin-left: 40%; 
-    display: block; 
+    display: flex; 
   }
   
   #estudios .content-wrapper .mapa p {
@@ -105,7 +157,11 @@ body {
     margin-right: 10%;
     margin-left: 38%;
   }
-  
+
+  .lt {
+    margin-left: 0; 
+    text-align: center;
+  }
   
   .content-wrapper {
     display: flex;
@@ -160,7 +216,7 @@ body {
   }
   
   #experiencia .text {
-    width: 100%; /* Ancho del div de texto */
+    width: 100%; 
     margin-right: 100px;
   }
   
@@ -176,6 +232,10 @@ body {
     font-size: 10px;
     font-weight: bold;
     text-transform: uppercase;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
   }
   
   #mas-contenido .content-wrapper {
@@ -189,11 +249,12 @@ body {
   #mas-contenido .video {
     width: 100%;
     display: flex;
-    justify-content: center; /* Para centrar el video */
+    justify-content: center;
   }
   
   #mas-contenido .video iframe {
-    border: 1px solid black; /* Para añadir el borde al video */
+    border: 1px solid black; 
+    margin-top: 5%;
   }
   
   #mas-contenido .download {
@@ -202,16 +263,19 @@ body {
     justify-content: center;
     align-items: center;
     font-size: 2rem;
+    margin-left: 25%;
+    margin-top: 5%;
+    margin-bottom: 5%;
   }
   
   #mas-contenido .download a {
     text-decoration: none;
-    color: white; /* Para hacer el texto del botón negro */
-    background-color: gray; /* Para hacer el fondo del botón gris */
+    color: white; 
+    background-color: gray;
     border: 1px solid gray;
     padding: 10px;
     border-radius: 5px;
-    font-weight: bold; /* Para hacer el texto del botón en negrita */
+    font-weight: bold;
   }
   
   footer {
@@ -239,29 +303,40 @@ body {
   
   footer .flag-button {
     margin-right: 50px;
-    padding: 5px; /* Añade un espacio interno alrededor de la bandera */
+    padding: 5px;
   }
   
   footer .flag-image {
-    width: 70px; /* Ajusta el tamaño de la bandera */
+    width: 70px; 
   }
   @media only screen and (max-width: 768px) {
     nav {
-      height: auto; /* Ajustar altura automáticamente */
-      flex-direction: column; /* Cambiar dirección del flexbox */
-      align-items: center; /* Centrar elementos */
+      height: auto; 
+      flex-direction: column; 
+      align-items: center; 
     }
   
     nav ul .right-icons {
-      margin-left: 0; /* Eliminar margen izquierdo */
-      margin-top: 5%; /* Espacio superior */
+      margin-left: 0; 
+      margin-top: 5%; 
     }
   
     nav ul .right-icons li {
-      margin-left: 0; /* Eliminar margen izquierdo */
-      margin-top: 5%; /* Espacio superior entre íconos */
+      margin-left: 0; 
+      margin-top: 5%; 
     }
-  
+    .qs {
+      font-size: 2rem; 
+      font-weight: bold;
+      margin-top: 1rem;
+      margin-left: 10%; 
+      text-decoration: underline; 
+      font-family: "Montserrat", sans-serif;
+      font-optical-sizing: auto;
+      font-weight: <weight>;
+      font-style: normal;
+      
+    }
     #quien-soy .image {
       width: 40%; 
       height: 20%;
@@ -269,54 +344,106 @@ body {
       margin-top: 20%; 
     }
   
-    #estudios .text h2 {
-      margin-left: 0; /* Ajustar margen izquierdo a 0 */
-      text-align: center; /* Centrar el título */
+    .lt {
+      margin-left: 0; 
+      text-align: center;
+    }
+    #estudios .text .title-text {
+      display: flex;
+      justify-content: flex-start;
+      align-items: flex-start; 
+      margin-left: 12%;
+      font-size: 140%;
+      font-family: "Montserrat", sans-serif;
+      font-optical-sizing: auto;
+      font-weight: <weight>;
+      font-style: normal;
+    }
+    #estudios .text .timeline-text {
+      margin-left: 10%; 
+      display: block; 
+      font-size: 18px; 
     }
   
-    #estudios .text .timeline-text {
-      margin-left: 0; /* Ajustar margen izquierdo a 0 */
-      justify-content: center; /* Centrar el contenido */
-      font-size: 18px; /* Reducir tamaño de fuente */
-    }
   
     #estudios .content-wrapper .mapa iframe {
-      width: 80%; /* Reducir tamaño del mapa */
-      margin: 0 auto; /* Centrar horizontalmente */
+      width: 80%; 
+      margin: auto; 
     }
   
     #estudios .content-wrapper .mapa p {
-      font-size: 24px; /* Ajustar tamaño de fuente */
-      margin: 0 auto; /* Centrar horizontalmente */
+      font-size: 24px; 
+      margin: 0 auto; 
     }
   
     #experiencia .text h1 {
-      margin-left: 0; /* Ajustar margen izquierdo a 0 */
-      text-align: center; /* Centrar el título */
+      margin-left: 0; 
+      text-align: center;
+      margin-right: 5%;
     }
   
     #experiencia .text {
-      width: 100%; /* Ancho del div de texto */
-      margin-right: 0; /* Ajustar margen derecho a 0 */
+      width: 100%; 
+      margin-right: 0; 
     }
   
     .text {
-      width: 100%; /* Ancho completo */
+      width: 100%; 
     }
-  
+    #mas-contenido .download {
+      width: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 2rem;
+    }
+    
+    #mas-contenido .download a {
+      text-decoration: none;
+      color: white; 
+      background-color: gray;
+      border: 1px solid gray;
+      padding: 10px;
+      border-radius: 5px;
+      font-weight: bold;
+    }
     .download {
-      width: auto; /* Ancho completo */
-      margin-top: 20px; /* Espacio superior */
+      width: auto; 
+      margin-top: 20px;
       text-align: center;
     }
   
     .download a {
-      padding: 15px; /* Ajustar relleno */
-      display: inline-block; /* Convertir en bloque en línea */
-      background-color: gray; /* Color de fondo */
-      color: white; /* Color de texto */
-      text-decoration: none; /* Quitar subrayado */
-      border-radius: 5px; /* Borde redondeado */
+      padding: 15px;
+      display: inline-block;
+      background-color: gray; 
+      color: white; 
+      text-decoration: none;
+      border-radius: 5px; 
+    }
+    footer .contact-info {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }  
+    footer .text {
+      flex: 1;
+      text-align: center;
+    }
+  
+    footer .text p {
+      font-size: 20px;
+      margin: 0 10px;
+    }
+    
+    footer .flag-button {
+      margin-right: 50px;
+      padding: 5px;
+    }
+    
+    footer .flag-image {
+      width: 70px; 
     }
   }
   
